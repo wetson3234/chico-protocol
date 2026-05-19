@@ -1,0 +1,23 @@
+# Chico Builder (CMB) Configuration
+# Agent, module, and workflow creation framework
+# Origin: built-in to Chico Protocol
+
+module_name: cmb
+module_version: 1.5.0
+module_description: Chico Builder — agent, module, workflow creation framework
+source: built-in
+
+user_name: "{{USER_NAME}}"
+communication_language: "{{COMMUNICATION_LANGUAGE}}"
+document_output_language: "{{DOCUMENT_LANGUAGE}}"
+output_folder: "{project-root}/_chico-output"
+chico_builder_output_folder: "{project-root}/_chico-output/builder-artifacts"
+chico_builder_reports: "{project-root}/_chico-output/reports/builder"
+project_knowledge: "{project-root}/docs"
+
+# Chico Protocol builder awareness
+system_rules:
+  - Anti-incompletion rules (R0-R9) apply to all created agents
+  - New agents must support manifest production (R5)
+  - Web module agents must reference knowledge bases
+  - Verify module skills must follow pass pattern

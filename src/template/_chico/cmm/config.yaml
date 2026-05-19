@@ -1,0 +1,42 @@
+# Product Method Core (CMM) Module Configuration
+# Product development pipeline: analysis → planning → solutioning → implementation
+# Origin: built-in to Chico Protocol
+
+module_name: cmm
+module_version: 1.0.0
+module_description: Complete product development pipeline with fused agents
+
+# Inherited from manifest
+user_name: "{{USER_NAME}}"
+communication_language: "{{COMMUNICATION_LANGUAGE}}"
+document_output_language: "{{DOCUMENT_LANGUAGE}}"
+user_skill_level: intermediate
+output_folder: "{project-root}/_chico-output"
+planning_artifacts: "{project-root}/_chico-output/planning-artifacts"
+implementation_artifacts: "{project-root}/_chico-output/implementation-artifacts"
+project_knowledge: "{project-root}/docs"
+
+# Phases
+phases:
+  1-analysis:
+    description: Business strategy, market research, personas, brand
+    lead_agent: chico-agent-analyst
+    support_agents: [chico-web-brand]
+  2-planning:
+    description: Product strategy, UX/UI design, copy, growth, accessibility
+    lead_agent: chico-agent-pm
+    support_agents: [chico-agent-ux-designer, chico-web-copy, chico-web-growth]
+  3-solutioning:
+    description: Technical architecture (system, DB, API, security, performance)
+    lead_agent: chico-agent-architect
+  4-implementation:
+    description: Full-stack development in 7 sequential batches
+    lead_agent: chico-agent-dev
+    batch_agents:
+      batch-1: [chico-agent-dev]
+      batch-2: [chico-web-data-layer, chico-web-auth]
+      batch-3: [chico-agent-dev]
+      batch-4: [chico-web-ui-components, chico-web-forms]
+      batch-5: [chico-web-user-flows, chico-web-admin]
+      batch-6: [chico-web-integration, chico-web-realtime]
+      batch-7: [chico-web-seo-perf]

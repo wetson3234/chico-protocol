@@ -1,0 +1,15 @@
+# Chico Protocol Core Module Configuration
+# Utility skills: brainstorming, editorial, party mode, adversarial review, help
+
+module_name: core
+module_version: 1.0.0
+module_description: Foundation utility skills and base workflows
+
+# Inherited from manifest
+user_name: "{{USER_NAME}}"
+communication_language: "{{COMMUNICATION_LANGUAGE}}"
+document_output_language: "{{DOCUMENT_LANGUAGE}}"
+output_folder: "{project-root}/_chico-output"
+planning_artifacts: "{project-root}/_chico-output/planning-artifacts"
+implementation_artifacts: "{project-root}/_chico-output/implementation-artifacts"
+project_knowledge: "{project-root}/docs"

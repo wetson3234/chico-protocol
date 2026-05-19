@@ -1,0 +1,13 @@
+{
+  "_comment": "Snippet à fusionner manuellement dans .claude/settings.json (ou settings.local.json) après avoir lancé install.sh. Le install.sh affiche le bloc exact avec les paths résolus pour ta machine.",
+  "mcpServers": {
+    "chico-rag": {
+      "command": "REPLACE_WITH_VENV_PYTHON_PATH",
+      "args": ["-m", "chico_rag.server"],
+      "cwd": "REPLACE_WITH_MCP_CODE_DIR",
+      "env": {
+        "CHICO_PROJECT_ROOT": "${workspaceFolder}"
+      }
+    }
+  }
+}

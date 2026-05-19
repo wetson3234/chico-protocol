@@ -1,0 +1,20 @@
+code: bmb
+name: "Chico Builder"
+description: "Standard Skill Compliant Factory for Chico Agents, Workflows and Modules"
+module_version: 1.0.0
+default_selected: false
+module_greeting: >
+  Enjoy making your dream creations with the Chico Builder Module!
+  Run this again at any time if you want to reconfigure a setting or have updated the module, (or optionally just update _chico/config.yaml and config.user.yaml to change existing values)
+
+  For questions, suggestions and support - check us on Discord at https://discord.gg/gk8jAdXWmj
+
+chico_builder_output_folder:
+  prompt: "Where should your custom output (agent, workflow, module config) be saved?"
+  default: "{project-root}/skills"
+  result: "{project-root}/{value}"
+
+chico_builder_reports:
+  prompt: "Output for Evals, Test, Quality and Planning Reports?"
+  default: "{project-root}/skills/reports"
+  result: "{project-root}/{value}"

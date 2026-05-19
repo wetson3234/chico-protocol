@@ -1,0 +1,20 @@
+# Files not needed in the npm package
+.github/
+docs/
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+SECURITY.md
+.gitignore
+.npmignore
+
+# Source repository internals only
+.git/
+node_modules/
+
+# Keep in the package:
+# - README.md
+# - LICENSE
+# - package.json
+# - src/template/  (the entire template tree the installer copies)
+# - tools/installer/

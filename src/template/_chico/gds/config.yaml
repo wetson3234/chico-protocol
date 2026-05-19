@@ -1,0 +1,18 @@
+# Game Dev Studio (GDS) Configuration
+# Game development specialist workflows and agents
+# Origin: built-in to Chico Protocol
+
+module_name: gds
+module_version: 0.3.0
+module_description: Game Dev Studio — game development specialist workflows
+source: built-in
+
+user_name: "{{USER_NAME}}"
+communication_language: "{{COMMUNICATION_LANGUAGE}}"
+document_output_language: "{{DOCUMENT_LANGUAGE}}"
+game_dev_experience: intermediate
+primary_platforms: [Unity, Unreal, Godot, other]
+output_folder: "{project-root}/_chico-output"
+planning_artifacts: "{project-root}/_chico-output/planning-artifacts"
+implementation_artifacts: "{project-root}/_chico-output/implementation-artifacts"
+project_knowledge: "{project-root}/docs"

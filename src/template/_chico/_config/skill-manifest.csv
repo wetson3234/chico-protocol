@@ -1,0 +1,129 @@
+canonicalId,name,description,module,category,origin,path
+chico-agent-analyst,Mary++ Agent,Strategic Business Intelligence Lead — business analysis + market research + personas,cmm,agent,fused,.claude/skills/chico-agent-analyst
+chico-agent-pm,John++ Agent,Product & Growth Strategist — PRD + growth/CRO strategy,cmm,agent,fused,.claude/skills/chico-agent-pm
+chico-agent-ux-designer,Sally++ Agent,UX/UI & Accessibility Architect — design system + WCAG AA,cmm,agent,fused,.claude/skills/chico-agent-ux-designer
+chico-agent-architect,Winston++ Agent,Full-Stack Architecture Lead — system + DB + API + security + performance,cmm,agent,fused,.claude/skills/chico-agent-architect
+chico-agent-dev,Amelia++ Agent,Full-Stack Dev Lead & Orchestrator — frontend + backend + batch orchestration,cmm,agent,fused,.claude/skills/chico-agent-dev
+chico-agent-tech-writer,Paige++ Agent,Documentation & Knowledge Lead — README + API docs + deploy guide,cmm,agent,fused,.claude/skills/chico-agent-tech-writer
+chico-tea,Murat++ Agent,Master QA & Verification Architect — all testing + audits + browser verify,tea,agent,fused,.claude/skills/chico-tea
+chico-web-brand,Frida Agent,Brand Identity Architect — archetype + palette + typography + voice,web,agent,new,.claude/skills/chico-web-brand
+chico-web-copy,Oscar Agent,Voice & Copy Strategist — microcopy + CTAs + error messages + i18n,web,agent,new,.claude/skills/chico-web-copy
+chico-web-data-layer,Atlas Agent,Data Architecture Engineer — Prisma schema + migrations + seeders + repositories,web,agent,new,.claude/skills/chico-web-data-layer
+chico-web-auth,Sentinel Agent,Auth & Security Engineer — auth flows + RBAC + JWT + middleware,web,agent,new,.claude/skills/chico-web-auth
+chico-web-ui-components,Pixel Agent,Component Library Architect — Atomic Design + accessible + dark mode,web,agent,new,.claude/skills/chico-web-ui-components
+chico-web-forms,Guardian Agent,Interaction Integrity Agent — zero dead elements + connect forms to APIs,web,agent,new,.claude/skills/chico-web-forms
+chico-web-user-flows,Navigator Agent,User Journey Orchestrator — verify 8+ user flows end-to-end,web,agent,new,.claude/skills/chico-web-user-flows
+chico-web-admin,Console Agent,Admin Interface Builder — dashboard + user CRUD + entity management,web,agent,new,.claude/skills/chico-web-admin
+chico-web-integration,Bridge Agent,External Service Integrator — email + payments + file upload,web,agent,new,.claude/skills/chico-web-integration
+chico-web-realtime,Pulse Agent,Realtime & Notifications Engineer — WebSocket/SSE + notification system,web,agent,new,.claude/skills/chico-web-realtime
+chico-web-seo-perf,Beacon Agent,SEO & Web Performance Engineer — metadata + sitemap + JSON-LD + optimization,web,agent,new,.claude/skills/chico-web-seo-perf
+chico-web-docker,Harbor Agent,Container & Orchestration Engineer — Dockerfile + compose + health checks,web,agent,new,.claude/skills/chico-web-docker
+chico-web-cicd,Pipeline Agent,CI/CD & Automation Engineer — GitHub Actions + Dependabot + preview deploys,web,agent,new,.claude/skills/chico-web-cicd
+chico-web-cloud,Nimbus Agent,Cloud Infrastructure Architect — IaC + CDN + DNS + backup,web,agent,new,.claude/skills/chico-web-cloud
+chico-web-analytics,Iris Agent,Analytics & Privacy Engineer — Plausible/PostHog + GDPR + event tracking,web,agent,new,.claude/skills/chico-web-analytics
+chico-web-monitoring,Sentry Agent,Observability & Alerting Engineer — error tracking + APM + structured logs,web,agent,new,.claude/skills/chico-web-monitoring
+chico-web-growth,Catalyst Agent,Growth Experimentation Lead — A/B testing + referral + email automation,web,agent,new,.claude/skills/chico-web-growth
+chico-web-bug-hunter,Tracker Agent,Production Bug Investigator — triage + root cause + TDD fix + post-mortem,web,agent,new,.claude/skills/chico-web-bug-hunter
+chico-web-feature-planner,Compass Agent,Feature Roadmap Strategist — RICE scoring + 3-horizon roadmap,web,agent,new,.claude/skills/chico-web-feature-planner
+chico-web-refactor,Forge Agent,Technical Debt Reducer — debt inventory + impact/effort matrix + quick wins,web,agent,new,.claude/skills/chico-web-refactor
+chico-cis-brainstorming-coach,Carson Agent,Elite Brainstorming Specialist,cis,agent,conserved,.claude/skills/chico-cis-brainstorming-coach
+chico-cis-creative-problem-solver,Dr. Quinn Agent,Master Problem Solver — TRIZ + Theory of Constraints,cis,agent,conserved,.claude/skills/chico-cis-creative-problem-solver
+chico-cis-design-thinking-coach,Maya Agent,Design Thinking Maestro — human-centered design,cis,agent,conserved,.claude/skills/chico-cis-design-thinking-coach
+chico-cis-innovation-strategist,Victor Agent,Disruptive Innovation Oracle — Blue Ocean + JTBD,cis,agent,conserved,.claude/skills/chico-cis-innovation-strategist
+chico-cis-presentation-master,Caravaggio Agent,Visual Communication Expert — slides + pitch decks,cis,agent,conserved,.claude/skills/chico-cis-presentation-master
+chico-cis-storyteller,Sophia Agent,Master Storyteller — narrative frameworks,cis,agent,conserved,.claude/skills/chico-cis-storyteller
+chico-gds-game-architect,Cloud Dragonborn Agent,Game Systems Architect,gds,agent,conserved,.claude/skills/chico-gds-game-architect
+chico-gds-game-designer,Samus Shepard Agent,Lead Game Designer,gds,agent,conserved,.claude/skills/chico-gds-game-designer
+chico-gds-game-dev,Link Freeman Agent,Senior Game Developer,gds,agent,conserved,.claude/skills/chico-gds-game-dev
+chico-gds-game-solo-dev,Indie Agent,Elite Solo Dev — Quick Flow,gds,agent,conserved,.claude/skills/chico-gds-game-solo-dev
+chico-gds-tech-writer,Paige GDS Agent,Technical Writer (Game),gds,agent,conserved,.claude/skills/chico-gds-tech-writer
+chico-agent-builder,Agent Builder,Create edit and analyze AI agents through conversational discovery,cmb,builder,conserved,.claude/skills/chico-agent-builder
+chico-module-builder,Module Builder,Plan create and validate Chico Protocol modules,cmb,builder,conserved,.claude/skills/chico-module-builder
+chico-workflow-builder,Workflow Builder,Build convert and analyze workflows and skills,cmb,builder,conserved,.claude/skills/chico-workflow-builder
+chico,Chico Orchestrator,Chef d'Orchestre — single entry point — qualifies user requests and routes to the right agents (existing or ad hoc) with parallelization,core,orchestrator,new,.claude/skills/chico
+chico-verify-concept,Verify Concept,Pass 0 — Brief fidelity verification,verify,verification,new,.claude/skills/chico-verify-concept
+chico-verify-production,Verify Production,Pass 2 — Build + imports + assets verification,verify,verification,new,.claude/skills/chico-verify-production
+chico-verify-functional,Verify Functional,Pass 3 — Zero dead elements + zero mocks + complete flows,verify,verification,new,.claude/skills/chico-verify-functional
+chico-verify-browser,Verify Browser,Pass 4 — Real Playwright browser testing on Chromium,verify,verification,new,.claude/skills/chico-verify-browser
+chico-verify-completude,Verify Completude,Pass 5 — Zero TODO/FIXME/placeholder/mock/lorem,verify,verification,new,.claude/skills/chico-verify-completude
+chico-brainstorming,Brainstorming,Facilitate interactive brainstorming sessions,core,workflow,conserved,.claude/skills/chico-brainstorming
+chico-distillator,Distillator,Lossless LLM-optimized compression of documents,core,workflow,conserved,.claude/skills/chico-distillator
+chico-editorial-review-prose,Editorial Review Prose,Clinical copy-editor for communication issues,core,workflow,conserved,.claude/skills/chico-editorial-review-prose
+chico-editorial-review-structure,Editorial Review Structure,Structural editor for reorganization and simplification,core,workflow,conserved,.claude/skills/chico-editorial-review-structure
+chico-party-mode,Party Mode,Multi-agent group discussions with all installed agents,core,workflow,conserved,.claude/skills/chico-party-mode
+chico-review-adversarial,Adversarial Review,Cynical review with anti-incompletion checks,core,workflow,enriched,.claude/skills/chico-review-adversarial
+chico-review-edge-case,Edge Case Hunter,Walk every branching path and boundary condition,core,workflow,conserved,.claude/skills/chico-review-edge-case
+chico-advanced-elicitation,Advanced Elicitation,Push LLM to reconsider and improve output,core,workflow,conserved,.claude/skills/chico-advanced-elicitation
+chico-shard-doc,Shard Document,Split large markdown into smaller organized files,core,utility,conserved,.claude/skills/chico-shard-doc
+chico-index-docs,Index Docs,Generate or update index.md for folder contents,core,utility,conserved,.claude/skills/chico-index-docs
+chico-help,Help,Contextual guidance and next-step recommendations,core,utility,conserved,.claude/skills/chico-help
+chico-create-prd,Create PRD,Create product requirements document — 14-step guided workflow,cmm,workflow,conserved,.claude/skills/chico-create-prd
+chico-edit-prd,Edit PRD,Edit an existing PRD,cmm,workflow,conserved,.claude/skills/chico-edit-prd
+chico-validate-prd,Validate PRD,Validate PRD against standards,cmm,workflow,conserved,.claude/skills/chico-validate-prd
+chico-create-ux-design,Create UX Design,Plan UX patterns and design specifications,cmm,workflow,conserved,.claude/skills/chico-create-ux-design
+chico-create-architecture,Create Architecture,Document technical decisions for implementation,cmm,workflow,conserved,.claude/skills/chico-create-architecture
+chico-create-epics-and-stories,Create Epics and Stories,Break requirements into epics and user stories,cmm,workflow,conserved,.claude/skills/chico-create-epics-and-stories
+chico-create-story,Create Story,Create dedicated story file with implementation context,cmm,workflow,conserved,.claude/skills/chico-create-story
+chico-dev-story,Dev Story,Execute story implementation from spec file,cmm,workflow,conserved,.claude/skills/chico-dev-story
+chico-quick-dev,Quick Dev,Implement any intent following project patterns,cmm,workflow,conserved,.claude/skills/chico-quick-dev
+chico-code-review,Code Review,Adversarial + compliance review (Blind Hunter + Edge Case + Acceptance + anti-incompletion),cmm,workflow,enriched,.claude/skills/chico-code-review
+chico-sprint-planning,Sprint Planning,Generate sprint status tracking from epics,cmm,workflow,conserved,.claude/skills/chico-sprint-planning
+chico-sprint-status,Sprint Status,Summarize sprint status and surface risks,cmm,workflow,conserved,.claude/skills/chico-sprint-status
+chico-correct-course,Correct Course,Manage significant changes during sprint execution,cmm,workflow,conserved,.claude/skills/chico-correct-course
+chico-retrospective,Retrospective,Post-epic review to extract lessons,cmm,workflow,conserved,.claude/skills/chico-retrospective
+chico-check-implementation-readiness,Check Implementation Readiness,Validate PRD + UX + Architecture + Epics alignment,cmm,workflow,conserved,.claude/skills/chico-check-implementation-readiness
+chico-checkpoint-preview,Checkpoint Preview,LLM-assisted human-in-the-loop review,cmm,workflow,conserved,.claude/skills/chico-checkpoint-preview
+chico-qa-generate-e2e,QA Generate E2E Tests,Generate end-to-end automated tests for existing features,cmm,workflow,conserved,.claude/skills/chico-qa-generate-e2e
+chico-document-project,Document Project,Document brownfield projects for AI context,cmm,workflow,conserved,.claude/skills/chico-document-project
+chico-generate-project-context,Generate Project Context,Create project-context.md with AI rules,cmm,workflow,conserved,.claude/skills/chico-generate-project-context
+chico-product-brief,Product Brief,Create or update product briefs through guided discovery,cmm,workflow,conserved,.claude/skills/chico-product-brief
+chico-prfaq,PRFAQ,Working Backwards PRFAQ challenge,cmm,workflow,conserved,.claude/skills/chico-prfaq
+chico-domain-research,Domain Research,Conduct domain and industry research,cmm,workflow,conserved,.claude/skills/chico-domain-research
+chico-market-research,Market Research,Conduct market research on competition and customers,cmm,workflow,conserved,.claude/skills/chico-market-research
+chico-technical-research,Technical Research,Conduct technical research on technologies and architecture,cmm,workflow,conserved,.claude/skills/chico-technical-research
+chico-teach-me-testing,Teach Me Testing,Teach testing progressively through structured sessions,tea,workflow,conserved,.claude/skills/chico-teach-me-testing
+chico-testarch-atdd,ATDD,Generate red-phase acceptance test scaffolds,tea,workflow,conserved,.claude/skills/chico-testarch-atdd
+chico-testarch-automate,Test Automate,Expand test automation coverage,tea,workflow,conserved,.claude/skills/chico-testarch-automate
+chico-testarch-ci,Test CI,Scaffold CI/CD quality pipeline,tea,workflow,conserved,.claude/skills/chico-testarch-ci
+chico-testarch-framework,Test Framework,Initialize test framework (Playwright/Cypress),tea,workflow,conserved,.claude/skills/chico-testarch-framework
+chico-testarch-nfr,NFR Assessment,Assess non-functional requirements,tea,workflow,conserved,.claude/skills/chico-testarch-nfr
+chico-testarch-test-design,Test Design,Create system-level or epic-level test plans,tea,workflow,conserved,.claude/skills/chico-testarch-test-design
+chico-testarch-test-review,Test Review,Review test quality using best practices validation,tea,workflow,conserved,.claude/skills/chico-testarch-test-review
+chico-testarch-trace,Traceability,Generate traceability matrix and quality gate decision,tea,workflow,conserved,.claude/skills/chico-testarch-trace
+chico-cis-brainstorming,CIS Brainstorming,Facilitate game brainstorming with creative techniques,cis,workflow,conserved,.claude/skills/chico-cis-brainstorming
+chico-cis-design-thinking,CIS Design Thinking,Guide human-centered design processes,cis,workflow,conserved,.claude/skills/chico-cis-design-thinking
+chico-cis-innovation-strategy,CIS Innovation Strategy,Identify disruption opportunities and architect innovation,cis,workflow,conserved,.claude/skills/chico-cis-innovation-strategy
+chico-cis-problem-solving,CIS Problem Solving,Apply systematic problem-solving methodologies,cis,workflow,conserved,.claude/skills/chico-cis-problem-solving
+chico-cis-storytelling,CIS Storytelling,Craft compelling narratives using story frameworks,cis,workflow,conserved,.claude/skills/chico-cis-storytelling
+chico-gds-brainstorm-game,GDS Brainstorm Game,Facilitate game brainstorming sessions,gds,workflow,conserved,.claude/skills/chico-gds-brainstorm-game
+chico-gds-create-game-brief,GDS Create Game Brief,Interactive game brief creation,gds,workflow,conserved,.claude/skills/chico-gds-create-game-brief
+chico-gds-create-gdd,GDS Create GDD,Create Game Design Documents,gds,workflow,conserved,.claude/skills/chico-gds-create-gdd
+chico-gds-create-narrative,GDS Create Narrative,Create narrative documentation,gds,workflow,conserved,.claude/skills/chico-gds-create-narrative
+chico-gds-create-prd,GDS Create PRD,Create PRD from GDD,gds,workflow,conserved,.claude/skills/chico-gds-create-prd
+chico-gds-create-ux-design,GDS Create UX Design,Plan game UX/HUD design,gds,workflow,conserved,.claude/skills/chico-gds-create-ux-design
+chico-gds-edit-gdd,GDS Edit GDD,Edit existing GDD,gds,workflow,conserved,.claude/skills/chico-gds-edit-gdd
+chico-gds-edit-prd,GDS Edit PRD,Edit existing game PRD,gds,workflow,conserved,.claude/skills/chico-gds-edit-prd
+chico-gds-validate-gdd,GDS Validate GDD,Validate GDD against standards,gds,workflow,conserved,.claude/skills/chico-gds-validate-gdd
+chico-gds-validate-prd,GDS Validate PRD,Validate game PRD against standards,gds,workflow,conserved,.claude/skills/chico-gds-validate-prd
+chico-gds-game-architecture,GDS Game Architecture,Design scale-adaptive game architecture,gds,workflow,conserved,.claude/skills/chico-gds-game-architecture
+chico-gds-generate-project-context,GDS Generate Project Context,Create project-context.md for game projects,gds,workflow,conserved,.claude/skills/chico-gds-generate-project-context
+chico-gds-check-implementation-readiness,GDS Check Readiness,Verify GDD + UX + Architecture alignment,gds,workflow,conserved,.claude/skills/chico-gds-check-implementation-readiness
+chico-gds-create-epics-and-stories,GDS Create Epics,Create game epics and stories,gds,workflow,conserved,.claude/skills/chico-gds-create-epics-and-stories
+chico-gds-create-story,GDS Create Story,Create game story file for implementation,gds,workflow,conserved,.claude/skills/chico-gds-create-story
+chico-gds-dev-story,GDS Dev Story,Execute game story implementation,gds,workflow,conserved,.claude/skills/chico-gds-dev-story
+chico-gds-quick-dev,GDS Quick Dev,Quick game development implementation,gds,workflow,conserved,.claude/skills/chico-gds-quick-dev
+chico-gds-code-review,GDS Code Review,Game code review with parallel layers,gds,workflow,conserved,.claude/skills/chico-gds-code-review
+chico-gds-correct-course,GDS Correct Course,Manage game sprint changes,gds,workflow,conserved,.claude/skills/chico-gds-correct-course
+chico-gds-retrospective,GDS Retrospective,Post-epic game review,gds,workflow,conserved,.claude/skills/chico-gds-retrospective
+chico-gds-sprint-planning,GDS Sprint Planning,Game sprint planning,gds,workflow,conserved,.claude/skills/chico-gds-sprint-planning
+chico-gds-sprint-status,GDS Sprint Status,Game sprint status,gds,workflow,conserved,.claude/skills/chico-gds-sprint-status
+chico-gds-document-project,GDS Document Project,Document existing game projects,gds,workflow,conserved,.claude/skills/chico-gds-document-project
+chico-gds-domain-research,GDS Domain Research,Game domain and industry research,gds,workflow,conserved,.claude/skills/chico-gds-domain-research
+chico-gds-test-framework,GDS Test Framework,Initialize game test framework,gds,workflow,conserved,.claude/skills/chico-gds-test-framework
+chico-gds-test-design,GDS Test Design,Create game test scenarios,gds,workflow,conserved,.claude/skills/chico-gds-test-design
+chico-gds-test-automate,GDS Test Automate,Generate automated game tests,gds,workflow,conserved,.claude/skills/chico-gds-test-automate
+chico-gds-test-review,GDS Test Review,Review game test quality,gds,workflow,conserved,.claude/skills/chico-gds-test-review
+chico-gds-e2e-scaffold,GDS E2E Scaffold,Scaffold game E2E testing,gds,workflow,conserved,.claude/skills/chico-gds-e2e-scaffold
+chico-gds-performance-test,GDS Performance Test,Game performance testing strategy,gds,workflow,conserved,.claude/skills/chico-gds-performance-test
+chico-gds-playtest-plan,GDS Playtest Plan,Create structured playtesting plans,gds,workflow,conserved,.claude/skills/chico-gds-playtest-plan
+chico-bmb-setup,BMB Setup,Configure Chico Builder module in project,cmb,utility,conserved,.claude/skills/chico-bmb-setup

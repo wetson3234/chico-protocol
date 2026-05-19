@@ -1,0 +1,23 @@
+[project]
+name = "chico-rag"
+version = "0.1.0"
+description = "RAG MCP server for Chico Protocol — semantic memory across projects"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "qdrant-client>=1.12.0",
+    "sentence-transformers>=3.0.0",
+    "sshtunnel>=0.4.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+chico-rag = "chico_rag.server:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["chico_rag*"]

@@ -1,0 +1,104 @@
+module,phase,name,code,skill-name,description,required-status,agent-name,output-location
+core,,Brainstorming,BR,chico-brainstorming,Facilitate interactive brainstorming sessions,,Carson,_chico-output/planning-artifacts
+core,,Distillator,DI,chico-distillator,Lossless LLM-optimized compression of documents,,,_chico-output
+core,,Editorial Review Prose,EP,chico-editorial-review-prose,Clinical copy-editor review,,,
+core,,Editorial Review Structure,ES,chico-editorial-review-structure,Structural editing and reorganization,,,
+core,,Party Mode,PM,chico-party-mode,Multi-agent group discussions,,,
+core,,Adversarial Review,AR,chico-review-adversarial,Cynical review with anti-incompletion checks,,,_chico-output/reports
+core,,Edge Case Hunter,EC,chico-review-edge-case,Walk every branching path and boundary,,,_chico-output/reports
+core,,Advanced Elicitation,AE,chico-advanced-elicitation,Push LLM to reconsider and improve,,,
+core,,Shard Document,SD,chico-shard-doc,Split large markdown into smaller files,,,
+core,,Index Docs,ID,chico-index-docs,Generate or update index.md for folder,,,
+core,,Help,HE,chico-help,Contextual guidance and recommendations,,,
+cmm,1-analysis,Business Analyst Agent,BA,chico-agent-analyst,Strategic Business Intelligence Lead,,Mary++,_chico-output/planning-artifacts/phase-01
+cmm,1-analysis,Product Brief,PB,chico-product-brief,Create or update product brief,,Mary++,_chico-output/planning-artifacts
+cmm,1-analysis,PRFAQ Challenge,PF,chico-prfaq,Working Backwards PRFAQ challenge,,Mary++,_chico-output/planning-artifacts
+cmm,1-analysis,Domain Research,DR,chico-domain-research,Domain and industry research,,Mary++,_chico-output/planning-artifacts
+cmm,1-analysis,Market Research,MR,chico-market-research,Competition and customer research,,Mary++,_chico-output/planning-artifacts
+cmm,1-analysis,Technical Research,TR,chico-technical-research,Technology and architecture research,,Winston++,_chico-output/planning-artifacts
+cmm,1-analysis,Document Project,DP,chico-document-project,Document brownfield projects,,Paige++,_chico-output/planning-artifacts
+cmm,2-planning,Product Manager Agent,JO,chico-agent-pm,Product & Growth Strategist,,John++,_chico-output/planning-artifacts/phase-02
+cmm,2-planning,Create PRD,CP,chico-create-prd,Create product requirements document,,John++,_chico-output/planning-artifacts
+cmm,2-planning,Edit PRD,EP2,chico-edit-prd,Edit existing PRD,,John++,_chico-output/planning-artifacts
+cmm,2-planning,Validate PRD,VP,chico-validate-prd,Validate PRD against standards,,John++,_chico-output/planning-artifacts
+cmm,2-planning,UX Designer Agent,SA,chico-agent-ux-designer,UX/UI & Accessibility Architect,,Sally++,_chico-output/planning-artifacts/phase-02
+cmm,2-planning,Create UX Design,UX,chico-create-ux-design,Plan UX patterns and design specs,,Sally++,_chico-output/planning-artifacts
+cmm,2-planning,Generate Project Context,GP,chico-generate-project-context,Create project-context.md,,,
+cmm,3-solutioning,Architect Agent,WI,chico-agent-architect,Full-Stack Architecture Lead,,Winston++,_chico-output/planning-artifacts/phase-03
+cmm,3-solutioning,Create Architecture,CA,chico-create-architecture,Document technical decisions,,Winston++,_chico-output/planning-artifacts
+cmm,3-solutioning,Create Epics and Stories,CE,chico-create-epics-and-stories,Break requirements into epics,,Winston++,_chico-output/planning-artifacts
+cmm,3-solutioning,Check Implementation Readiness,IR,chico-check-implementation-readiness,Validate alignment of all specs,,,
+cmm,4-implementation,Developer Agent,AM,chico-agent-dev,Full-Stack Dev Lead,,Amelia++,
+cmm,4-implementation,Create Story,CS,chico-create-story,Create story file with context,,Amelia++,_chico-output/implementation-artifacts
+cmm,4-implementation,Dev Story,DS,chico-dev-story,Execute story implementation,,Amelia++,
+cmm,4-implementation,Quick Dev,QD,chico-quick-dev,Implement any intent quickly,,Amelia++,
+cmm,4-implementation,Code Review,CR,chico-code-review,Adversarial + compliance review,,,_chico-output/reports
+cmm,4-implementation,Sprint Planning,SP,chico-sprint-planning,Generate sprint tracking,,Amelia++,_chico-output/planning-artifacts
+cmm,4-implementation,Sprint Status,SS,chico-sprint-status,Summarize sprint status,,,
+cmm,4-implementation,Correct Course,CC,chico-correct-course,Manage sprint changes,,,
+cmm,4-implementation,Retrospective,RE,chico-retrospective,Post-epic review,,,_chico-output/reports
+cmm,4-implementation,Checkpoint Preview,CK,chico-checkpoint-preview,Human-in-the-loop review,,,
+cmm,4-implementation,QA Generate E2E,QA,chico-qa-generate-e2e,Generate E2E automated tests,,Murat++,_chico-output/testing-artifacts
+cmm,4-implementation,Tech Writer Agent,PA,chico-agent-tech-writer,Documentation & Knowledge Lead,,Paige++,
+web,planning,Brand Strategist,FB,chico-web-brand,Brand identity architecture,,Frida,_chico-output/planning-artifacts/phase-01
+web,planning,Copywriter,OC,chico-web-copy,Voice & copy strategy,,Oscar,_chico-output/planning-artifacts/phase-02
+web,development,Data Layer,AT,chico-web-data-layer,Data architecture engineering,,Atlas,
+web,development,Auth Security,SE,chico-web-auth,Auth & security engineering,,Sentinel,
+web,development,UI Components,PX,chico-web-ui-components,Component library architecture,,Pixel,
+web,development,Forms & Interactions,GU,chico-web-forms,Interaction integrity,,Guardian,
+web,development,User Flows,NV,chico-web-user-flows,User journey orchestration,,Navigator,
+web,development,Admin Panel,CO,chico-web-admin,Admin interface building,,Console,
+web,development,Integration,BR2,chico-web-integration,External service integration,,Bridge,
+web,development,Realtime,PU,chico-web-realtime,Realtime & notifications,,Pulse,
+web,development,SEO & Perf,BE,chico-web-seo-perf,SEO & web performance,,Beacon,
+web,deployment,Docker,HA,chico-web-docker,Container orchestration,,Harbor,
+web,deployment,CI/CD,PI,chico-web-cicd,CI/CD automation,,Pipeline,
+web,deployment,Cloud,NI,chico-web-cloud,Cloud infrastructure,,Nimbus,
+web,post-launch,Analytics,IR2,chico-web-analytics,Analytics & privacy,,Iris,
+web,post-launch,Monitoring,SN,chico-web-monitoring,Observability & alerting,,Sentry,
+web,post-launch,Growth,CA2,chico-web-growth,Growth experimentation,,Catalyst,
+web,continuous,Bug Hunter,TK,chico-web-bug-hunter,Production bug investigation,,Tracker,
+web,continuous,Feature Planner,CM,chico-web-feature-planner,Feature roadmap strategy,,Compass,
+web,continuous,Refactor,FG,chico-web-refactor,Technical debt reduction,,Forge,
+tea,,Test Architect Agent,MU,chico-tea,Master QA & Verification Architect,,Murat++,
+tea,,Teach Me Testing,TMT,chico-teach-me-testing,Progressive testing education,,Murat++,
+tea,,ATDD,TAT,chico-testarch-atdd,Acceptance test scaffolds,,Murat++,_chico-output/testing-artifacts
+tea,,Test Automate,TAU,chico-testarch-automate,Expand test automation,,Murat++,_chico-output/testing-artifacts
+tea,,Test CI,TCI,chico-testarch-ci,CI/CD quality pipeline,,Murat++,
+tea,,Test Framework,TFR,chico-testarch-framework,Initialize test framework,,Murat++,
+tea,,NFR Assessment,TNF,chico-testarch-nfr,Non-functional requirements,,Murat++,_chico-output/reports
+tea,,Test Design,TTD,chico-testarch-test-design,System-level test plans,,Murat++,_chico-output/testing-artifacts
+tea,,Test Review,TTR,chico-testarch-test-review,Test quality validation,,Murat++,_chico-output/reports
+tea,,Traceability,TTK,chico-testarch-trace,Traceability matrix,,Murat++,_chico-output/reports
+core,,Chico Orchestrator,CHO,chico,Chef d'Orchestre — single entry point — qualifies user requests and delegates to the right agents,,Chico,_chico-output
+verify,,Verify Concept,V0,chico-verify-concept,Pass 0 — Brief fidelity,,Murat++,_chico-output/reports
+verify,,Verify Production,V2,chico-verify-production,Pass 2 — Build & imports,,Murat++,_chico-output/reports
+verify,,Verify Functional,V3,chico-verify-functional,Pass 3 — Zero dead elements,,Murat++,_chico-output/reports
+verify,,Verify Browser,V4,chico-verify-browser,Pass 4 — Playwright browser test,,Murat++,_chico-output/reports
+verify,,Verify Completude,V5,chico-verify-completude,Pass 5 — Zero TODO/placeholder,,Murat++,_chico-output/reports
+cis,,Brainstorming Coach,BC,chico-cis-brainstorming-coach,Elite brainstorming specialist,,Carson,
+cis,,Creative Problem Solver,PS,chico-cis-creative-problem-solver,Master problem solver,,Dr. Quinn,
+cis,,Design Thinking Coach,DT,chico-cis-design-thinking-coach,Design thinking maestro,,Maya,
+cis,,Innovation Strategist,IS,chico-cis-innovation-strategist,Disruptive innovation oracle,,Victor,
+cis,,Presentation Master,PRM,chico-cis-presentation-master,Visual communication expert,,Caravaggio,
+cis,,Storyteller,ST,chico-cis-storyteller,Master storyteller,,Sophia,
+cis,,CIS Brainstorming,CBR,chico-cis-brainstorming,Creative brainstorming workflows,,,
+cis,,CIS Design Thinking,CDT,chico-cis-design-thinking,Human-centered design processes,,,
+cis,,CIS Innovation Strategy,CIS,chico-cis-innovation-strategy,Disruption opportunities,,,
+cis,,CIS Problem Solving,CPS,chico-cis-problem-solving,Systematic problem-solving,,,
+cis,,CIS Storytelling,CST,chico-cis-storytelling,Compelling narratives,,,
+cmb,,Agent Builder,AB,chico-agent-builder,Create/edit/analyze AI agents,,,
+cmb,,Module Builder,MB,chico-module-builder,Plan/create/validate modules,,,
+cmb,,Workflow Builder,WB,chico-workflow-builder,Build/convert/analyze workflows,,,
+cmb,,BMB Setup,BS,chico-bmb-setup,Configure Chico Builder,,,
+gds,,Game Architect,GA,chico-gds-game-architect,Game systems architect,,Cloud Dragonborn,
+gds,,Game Designer,GD,chico-gds-game-designer,Lead game designer,,Samus Shepard,
+gds,,Game Developer,GV,chico-gds-game-dev,Senior game developer,,Link Freeman,
+gds,,Game Solo Dev,GS,chico-gds-game-solo-dev,Elite solo dev,,Indie,
+gds,,Game Tech Writer,GT,chico-gds-tech-writer,Game technical writer,,Paige,
+gds,,Game Brief,GB,chico-gds-create-game-brief,Create game brief,,,_chico-output/planning-artifacts
+gds,,Create GDD,CG,chico-gds-create-gdd,Create game design document,,,_chico-output/planning-artifacts
+gds,,Game Architecture,GAR,chico-gds-game-architecture,Design game architecture,,,_chico-output/planning-artifacts
+gds,,GDS Dev Story,GDS,chico-gds-dev-story,Execute game story implementation,,,
+gds,,GDS Quick Dev,GQD,chico-gds-quick-dev,Quick game development,,,
+gds,,GDS Code Review,GCR,chico-gds-code-review,Game code review,,,_chico-output/reports

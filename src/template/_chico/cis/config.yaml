@@ -1,0 +1,16 @@
+# Creative Intelligence Suite (CIS) Configuration
+# Innovation, creativity, storytelling, design thinking, presentations
+# Origin: built-in to Chico Protocol
+
+module_name: cis
+module_version: 0.1.9
+module_description: Creative Intelligence Suite — innovation, creativity, storytelling, design thinking
+source: built-in
+
+user_name: "{{USER_NAME}}"
+communication_language: "{{COMMUNICATION_LANGUAGE}}"
+document_output_language: "{{DOCUMENT_LANGUAGE}}"
+visual_tools: intermediate
+output_folder: "{project-root}/_chico-output"
+planning_artifacts: "{project-root}/_chico-output/planning-artifacts"
+project_knowledge: "{project-root}/docs"

@@ -1,0 +1,42 @@
+canonicalId,name,displayName,title,persona,module,type,phase,origin,path
+chico-agent-analyst,Mary++,Mary,Strategic Business Intelligence Lead,Mary,cmm,Memory,P01,built-in,.claude/skills/chico-agent-analyst
+chico-agent-pm,John++,John,Product & Growth Strategist,John,cmm,Memory,P02,built-in,.claude/skills/chico-agent-pm
+chico-agent-ux-designer,Sally++,Sally,UX/UI & Accessibility Architect,Sally,cmm,Memory,P02,built-in,.claude/skills/chico-agent-ux-designer
+chico-agent-architect,Winston++,Winston,Full-Stack Architecture Lead,Winston,cmm,Memory,P03,built-in,.claude/skills/chico-agent-architect
+chico-agent-dev,Amelia++,Amelia,Full-Stack Dev Lead & Orchestrator,Amelia,cmm,Memory,P04,built-in,.claude/skills/chico-agent-dev
+chico-agent-tech-writer,Paige++,Paige,Documentation & Knowledge Lead,Paige,cmm,Memory,P06,built-in,.claude/skills/chico-agent-tech-writer
+chico-tea,Murat++,Murat,Master QA & Verification Architect,Murat,tea,Memory,P05,built-in,.claude/skills/chico-tea
+chico-web-brand,Frida,Frida,Brand Identity Architect,Frida,web,Stateless,P01,built-in,.claude/skills/chico-web-brand
+chico-web-copy,Oscar,Oscar,Voice & Copy Strategist,Oscar,web,Stateless,P02,built-in,.claude/skills/chico-web-copy
+chico-web-data-layer,Atlas,Atlas,Data Architecture Engineer,Atlas,web,Stateless,P04-B2,built-in,.claude/skills/chico-web-data-layer
+chico-web-auth,Sentinel,Sentinel,Auth & Security Engineer,Sentinel,web,Stateless,P04-B2,built-in,.claude/skills/chico-web-auth
+chico-web-ui-components,Pixel,Pixel,Component Library Architect,Pixel,web,Stateless,P04-B4,built-in,.claude/skills/chico-web-ui-components
+chico-web-forms,Guardian,Guardian,Interaction Integrity Agent,Guardian,web,Stateless,P04-B4,built-in,.claude/skills/chico-web-forms
+chico-web-user-flows,Navigator,Navigator,User Journey Orchestrator,Navigator,web,Stateless,P04-B5,built-in,.claude/skills/chico-web-user-flows
+chico-web-admin,Console,Console,Admin Interface Builder,Console,web,Stateless,P04-B5,built-in,.claude/skills/chico-web-admin
+chico-web-integration,Bridge,Bridge,External Service Integrator,Bridge,web,Stateless,P04-B6,built-in,.claude/skills/chico-web-integration
+chico-web-realtime,Pulse,Pulse,Realtime & Notifications Engineer,Pulse,web,Stateless,P04-B6,built-in,.claude/skills/chico-web-realtime
+chico-web-seo-perf,Beacon,Beacon,SEO & Web Performance Engineer,Beacon,web,Stateless,P04-B7,built-in,.claude/skills/chico-web-seo-perf
+chico-web-docker,Harbor,Harbor,Container & Orchestration Engineer,Harbor,web,Stateless,P06,built-in,.claude/skills/chico-web-docker
+chico-web-cicd,Pipeline,Pipeline,CI/CD & Automation Engineer,Pipeline,web,Stateless,P06,built-in,.claude/skills/chico-web-cicd
+chico-web-cloud,Nimbus,Nimbus,Cloud Infrastructure Architect,Nimbus,web,Stateless,P06,built-in,.claude/skills/chico-web-cloud
+chico-web-analytics,Iris,Iris,Analytics & Privacy Engineer,Iris,web,Stateless,P07,built-in,.claude/skills/chico-web-analytics
+chico-web-monitoring,Sentry,Sentry,Observability & Alerting Engineer,Sentry,web,Stateless,P07,built-in,.claude/skills/chico-web-monitoring
+chico-web-growth,Catalyst,Catalyst,Growth Experimentation Lead,Catalyst,web,Stateless,P07,built-in,.claude/skills/chico-web-growth
+chico-web-bug-hunter,Tracker,Tracker,Production Bug Investigator,Tracker,web,Autonomous,P08,built-in,.claude/skills/chico-web-bug-hunter
+chico-web-feature-planner,Compass,Compass,Feature Roadmap Strategist,Compass,web,Stateless,P08,built-in,.claude/skills/chico-web-feature-planner
+chico-web-refactor,Forge,Forge,Technical Debt Reducer,Forge,web,Stateless,P08,built-in,.claude/skills/chico-web-refactor
+chico-cis-brainstorming-coach,Carson,Carson,Elite Brainstorming Specialist,Carson,cis,Stateless,,built-in,.claude/skills/chico-cis-brainstorming-coach
+chico-cis-creative-problem-solver,Dr. Quinn,Dr. Quinn,Master Problem Solver,Dr. Quinn,cis,Stateless,,built-in,.claude/skills/chico-cis-creative-problem-solver
+chico-cis-design-thinking-coach,Maya,Maya,Design Thinking Maestro,Maya,cis,Stateless,,built-in,.claude/skills/chico-cis-design-thinking-coach
+chico-cis-innovation-strategist,Victor,Victor,Disruptive Innovation Oracle,Victor,cis,Stateless,,built-in,.claude/skills/chico-cis-innovation-strategist
+chico-cis-presentation-master,Caravaggio,Caravaggio,Visual Communication Expert,Caravaggio,cis,Stateless,,built-in,.claude/skills/chico-cis-presentation-master
+chico-cis-storyteller,Sophia,Sophia,Master Storyteller,Sophia,cis,Stateless,,built-in,.claude/skills/chico-cis-storyteller
+chico-gds-game-architect,Cloud Dragonborn,Cloud Dragonborn,Game Systems Architect,Cloud Dragonborn,gds,Memory,,built-in,.claude/skills/chico-gds-game-architect
+chico-gds-game-designer,Samus Shepard,Samus Shepard,Lead Game Designer,Samus Shepard,gds,Memory,,built-in,.claude/skills/chico-gds-game-designer
+chico-gds-game-dev,Link Freeman,Link Freeman,Senior Game Developer,Link Freeman,gds,Memory,,built-in,.claude/skills/chico-gds-game-dev
+chico-gds-game-solo-dev,Indie,Indie,Elite Solo Dev,Indie,gds,Memory,,built-in,.claude/skills/chico-gds-game-solo-dev
+chico-gds-tech-writer,Paige (GDS),Paige,Technical Writer (Game),Paige,gds,Memory,,built-in,.claude/skills/chico-gds-tech-writer
+chico-agent-builder,Agent Builder,Agent Builder,Agent Creation Framework,,cmb,Stateless,,built-in,.claude/skills/chico-agent-builder
+chico-module-builder,Module Builder,Module Builder,Module Creation Framework,,cmb,Stateless,,built-in,.claude/skills/chico-module-builder
+chico-workflow-builder,Workflow Builder,Workflow Builder,Workflow Creation Framework,,cmb,Stateless,,built-in,.claude/skills/chico-workflow-builder

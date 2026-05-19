@@ -1,0 +1,29 @@
+# Test Architecture Enterprise (TEA) Configuration
+# Testing methodology, QA, verification, audits
+# Origin: built-in to Chico Protocol
+
+module_name: tea
+module_version: 1.7.2
+module_description: Test Architecture Enterprise — QA methodology, verification, audits
+source: built-in
+
+user_name: "{{USER_NAME}}"
+communication_language: "{{COMMUNICATION_LANGUAGE}}"
+document_output_language: "{{DOCUMENT_LANGUAGE}}"
+output_folder: "{project-root}/_chico-output"
+planning_artifacts: "{project-root}/_chico-output/planning-artifacts"
+implementation_artifacts: "{project-root}/_chico-output/implementation-artifacts"
+testing_artifacts: "{project-root}/_chico-output/testing-artifacts"
+project_knowledge: "{project-root}/docs"
+
+# TEA-specific config
+test_stack_type: web
+test_framework: playwright
+risk_threshold: medium
+browser_automation: playwright
+ci_platform: github-actions
+
+# Coverage requirements (Chico Protocol standard)
+coverage_target: 85
+lighthouse_target: 90
+wcag_level: AA

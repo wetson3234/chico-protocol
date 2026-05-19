@@ -1,0 +1,76 @@
+# Verification Module Configuration
+# 5 individual passes + browser-verify infrastructure
+# Origin: CCCTA V3
+# Note: passes are invoked individually on demand (typically by Chico orchestrator),
+# never as a forced sequential pipeline.
+
+module_name: verify
+module_version: 1.0.0
+module_description: Five sequential verification passes ensuring production-grade output
+
+# Inherited from manifest
+user_name: "{{USER_NAME}}"
+communication_language: "{{COMMUNICATION_LANGUAGE}}"
+document_output_language: "{{DOCUMENT_LANGUAGE}}"
+output_folder: "{project-root}/_chico-output"
+reports_folder: "{project-root}/_chico-output/reports"
+screenshots_folder: "{project-root}/_chico-output/reports/screenshots"
+
+# Verification passes (sequential execution order)
+passes:
+  - id: pass-0
+    name: Concept Verification
+    skill: chico-verify-concept
+    description: Brief fidelity — every requested feature exists, matches concept, complete implementation
+    correction_limit: unlimited
+
+  - id: pass-2
+    name: Production Verification
+    skill: chico-verify-production
+    description: npm run build clean, all imports resolve, all assets exist, all configs present
+    correction_limit: unlimited
+
+  - id: pass-3
+    name: Functional Verification
+    skill: chico-verify-functional
+    description: Zero empty handlers, zero mock responses, zero dead links, all flows work
+    correction_limit: unlimited
+
+  - id: pass-4
+    name: Browser Verification
+    skill: chico-verify-browser
+    description: Playwright on real Chromium — console errors, network errors, JS exceptions, screenshots
+    script: "{project-root}/.claude/scripts/browser-verify.mjs"
+    correction_limit: unlimited
+
+  - id: pass-5
+    name: Completeness Verification
+    skill: chico-verify-completude
+    description: Zero TODO/FIXME/placeholder/mock/lorem, all env vars documented
+    correction_limit: unlimited
+
+# Anti-incompletion grep patterns
+grep_patterns:
+  forbidden_code:
+    - "TODO"
+    - "FIXME"
+    - "HACK"
+    - "XXX"
+    - "placeholder"
+    - "lorem ipsum"
+    - "coming soon"
+    - "a venir"
+    - "console.log"
+  forbidden_handlers:
+    - "onClick={() => {}}"
+    - "onClick={() => null}"
+    - "onSubmit={() => {}}"
+    - "onChange={() => {}}"
+  forbidden_links:
+    - 'href="#"'
+    - "href='#'"
+  forbidden_mocks:
+    - "mock("
+    - "mockData"
+    - "fakeFetch"
+    - "hardcodedData"
