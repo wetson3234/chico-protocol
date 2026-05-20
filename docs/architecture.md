@@ -288,7 +288,7 @@ The installer writes user preferences into `_chico/_config/manifest.yaml`:
 ```yaml
 version: 1.1.0
 installed: 2026-05-19
-user_name: Alex
+user_name: Alice
 communication_language: français
 document_output_language: français
 modules:
@@ -305,7 +305,7 @@ rag_enabled: false
 Module-specific config lives in `_chico/<module>/config.yaml`:
 
 ```yaml
-user_name: Alex
+user_name: Alice
 communication_language: français
 document_output_language: français
 planning_artifacts: _chico-output/planning-artifacts

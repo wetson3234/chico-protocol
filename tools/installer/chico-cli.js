@@ -263,11 +263,30 @@ async function gatherAnswers(opts) {
   // Q1 — Name
   const userName = await p.text({
     message: pc.bold("What's your name?"),
-    placeholder: 'e.g. Alex',
+    placeholder: 'Alice',
     initialValue: opts.name || '',
     validate(value) {
       if (!value || !value.trim()) return 'Please enter a name — Chico will use it to address you.';
-      if (value.trim().length > 64) return 'That looks long. Keep it under 64 characters.';
+      const trimmed = value.trim();
+      if (trimmed.length > 64) return 'That looks long. Keep it under 64 characters.';
+      // Reject obvious placeholder leftovers ("e.g. ...", "ex. ...", "your name", etc.)
+      const lower = trimmed.toLowerCase();
+      const placeholderPatterns = [
+        /^e\.?\s*g\.?\s+/i,         // "e.g. ...", "eg ..."
+        /^ex\.?\s+/i,                // "ex. ..."
+        /^(your|the)\s+name/i,       // "your name", "the name"
+        /^name\s*(here)?$/i,         // "name", "name here"
+        /^<.*>$/,                    // "<...>"
+        /^\[.*\]$/,                  // "[...]"
+      ];
+      for (const pattern of placeholderPatterns) {
+        if (pattern.test(trimmed)) {
+          return 'That looks like a placeholder. Please type your real name.';
+        }
+      }
+      if (lower === 'alice') {
+        return 'Alice is the example name. Please type yours.';
+      }
       return undefined;
     },
   });

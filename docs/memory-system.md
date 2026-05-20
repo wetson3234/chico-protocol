@@ -39,7 +39,7 @@ The CMM Memory agents (Mary++, John++, Sally++, Winston++, Amelia++, Murat++, Pa
 
 Good entries:
 
-- "Alex prefers `cva` over raw `clsx` for component variants"
+- "Alice prefers `cva` over raw `clsx` for component variants"
 - "This project uses a forked noVNC — avoid `npm update` without review"
 - "April 2026 decision: no Vercel on this project, everything through Coolify"
 - "When the Stripe webhook lands, route through the queue table first — direct processing caused deadlocks last sprint"
@@ -188,7 +188,7 @@ You have three options:
 
 | Question | Best tool |
 |---|---|
-| "What's Alex's preference for X?" | Sanctum (`_chico/memory/<persona>.md`) |
+| "What's Alice's preference for X?" | Sanctum (`_chico/memory/<persona>.md`) |
 | "What did we decide three sessions ago?" | `chico_memory_search("...")` |
 | "What does this short config file say?" | Just `Read` it |
 | "Where is the auth pattern documented?" | `chico_memory_search("auth pattern")` |

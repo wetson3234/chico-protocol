@@ -6,6 +6,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.0.1] — 2026-05-20
+
+### Fixed
+- Installer no longer accepts placeholder values as a real name (e.g. "e.g. Alex"); validation now rejects "e.g. ...", "ex. ...", "your name", bracketed values, and the example "Alice".
+- The orchestrator skill reported "128 skills" — corrected to 130 to match the manifest and the installer banner.
+- Generic examples in `docs/` (memory-system, architecture, getting-started) now use a neutral example name instead of a real one.
+
 ## [1.0.0] — 2026-05-19
 
 First public release of Chico Protocol.

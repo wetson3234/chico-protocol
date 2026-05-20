@@ -34,7 +34,7 @@ npx chico-protocol install
 
 The installer asks a handful of questions:
 
-- **Your name** — used for greetings (e.g. "Welcome back, Alex")
+- **Your name** — used for greetings (e.g. "Welcome back, Alice")
 - **Communication language** — the language agents will speak to you in (English, French, etc.)
 - **Document output language** — the language for generated artifacts (PRDs, READMEs, architecture docs)
 - **Modules to install** — defaults to all 8, but you can deselect modules you don't need (e.g. skip GDS if you're not building games)
@@ -46,7 +46,7 @@ Defaults are sensible. You can press Enter through the whole flow if you want ev
 
 ```bash
 npx chico-protocol install \
-  --user-name "Alex" \
+  --user-name "Alice" \
   --communication-language "français" \
   --document-output-language "français" \
   --modules all \
