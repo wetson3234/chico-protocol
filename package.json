@@ -1,6 +1,6 @@
 {
   "name": "chico-protocol",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A complete tech agency inside Claude Code — 42 agents, 130 skills, one entry point: /chico",
   "type": "module",
   "keywords": [

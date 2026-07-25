@@ -6,6 +6,23 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-07-25
+
+### Added
+- **Auto-resume after a usage limit** (`.claude/scripts/auto-resume.mjs`): watches the
+  session transcript, detects a real usage-limit event, parses the reset time (12h/24h +
+  IANA timezone, DST-safe), waits until reset + a safety delay, then relaunches the session
+  with `claude --resume` so work (and in-flight agents) picks back up on its own. Pure Node,
+  zero dependencies, cross-platform.
+  - **Reliable detection**: triggers only on the genuine limit record
+    (`type:"assistant"` with `isApiErrorMessage:true`), never on messages that merely *quote*
+    the phrase (user messages, task-notifications, assistant explanations) — validated on real
+    transcripts (27 real events matched, 69 quotes ignored).
+  - Robust `claude` binary resolution (`where`/`which`, `--claude-bin`, `CLAUDE_BIN`) — a wrong
+    binary name previously caused silent failures.
+  - Never-silent failures (logged + retry), reschedules to the earliest reset, follows the new
+    transcript created by each resume.
+
 ## [1.0.1] — 2026-05-20
 
 ### Fixed

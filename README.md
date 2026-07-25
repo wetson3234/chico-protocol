@@ -152,6 +152,26 @@ Pass 4 catches what static analysis can't: runtime errors only visible when the 
 
 ---
 
+## Auto-resume after a usage limit
+
+Long autonomous runs eventually hit the account's usage limit. Instead of the work stalling
+until you notice, the auto-resume watcher waits out the limit and relaunches the session on its own.
+
+```bash
+# start it in the background for a long session (auto-detects the current session transcript)
+node .claude/scripts/auto-resume.mjs            # Unix: append &   ·   Windows: Start-Process -WindowStyle Hidden
+```
+
+It watches the session transcript for a **genuine** limit event — the record Claude Code writes as
+`type:"assistant"` with `isApiErrorMessage:true`, e.g. *"You've hit your session limit · resets 7:40pm
+(Europe/Brussels)"* — parses the reset time (12h/24h + IANA timezone, DST-safe), waits until reset + a
+safety delay (`--delay-min`, default 5), then runs `claude --resume` so in-flight agents pick their work
+back up. It deliberately ignores messages that merely *quote* the phrase (user messages, task-notifications,
+the assistant's own explanations), so it never fires on a false positive. Pure Node, zero dependencies,
+cross-platform. See the script header for all flags (`--transcript`, `--claude-bin`, `--once`).
+
+---
+
 ## Memory system
 
 Chico Protocol has a two-tier memory model — both optional, both useful.
