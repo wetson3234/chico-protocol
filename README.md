@@ -163,12 +163,28 @@ node .claude/scripts/auto-resume.mjs            # Unix: append &   ·   Windows:
 ```
 
 It watches the session transcript for a **genuine** limit event — the record Claude Code writes as
-`type:"assistant"` with `isApiErrorMessage:true`, e.g. *"You've hit your session limit · resets 7:40pm
-(Europe/Brussels)"* — parses the reset time (12h/24h + IANA timezone, DST-safe), waits until reset + a
-safety delay (`--delay-min`, default 5), then runs `claude --resume` so in-flight agents pick their work
-back up. It deliberately ignores messages that merely *quote* the phrase (user messages, task-notifications,
-the assistant's own explanations), so it never fires on a false positive. Pure Node, zero dependencies,
-cross-platform. See the script header for all flags (`--transcript`, `--claude-bin`, `--once`).
+`type:"assistant"` with `isApiErrorMessage:true`, e.g. *"You've hit your weekly limit · resets 8pm
+(Europe/Brussels)"* — and covers every limit kind (session, weekly, daily, monthly, 5-hour, rate,
+French variants) and time format (`8pm`, `6:50pm`, `18:50`, `20h05`, optional weekday, optional IANA
+timezone). The reset time is parsed **dynamically**, DST-safe, then the session is relaunched with
+`claude --resume` at reset + a safety delay (`--delay-min`, default 5) so in-flight agents pick their
+work back up. It deliberately ignores messages that merely *quote* the phrase, so it never fires on a
+false positive. Pure Node, zero dependencies, cross-platform.
+
+Hardened against the failure modes that actually happen overnight:
+
+- **Sleep/reboot-proof** — pending resumes are persisted to a state file and fired by a wall-clock
+  check, not a long `setTimeout`. Pair it with a Windows scheduled task or a cron entry that reruns
+  the script every few minutes: the single-instance lock makes that a no-op while one watcher is
+  alive, and the **startup catch-up scan** recovers a limit that struck while nothing was running.
+- **Model fallback** (on by default, `--no-fallback` to disable) — when the limit hits a high tier,
+  the watcher immediately resumes on the next lower tier (`--fallback-chain`, default
+  `fable,opus,sonnet`) instead of waiting, and still resumes normally at reset time to restore the
+  original model.
+- **Dry-run tooling** — `--scan-only` prints the catch-up verdict and exits; `--dry-run` logs every
+  decision without ever spawning `claude`.
+
+See the script header for all flags (`--transcript`, `--claude-bin`, `--once`, `--delay-min`).
 
 ---
 
@@ -176,7 +192,7 @@ cross-platform. See the script header for all flags (`--transcript`, `--claude-b
 
 Chico Protocol has a two-tier memory model — both optional, both useful.
 
-**Agent Sanctum** is the always-on layer: each Memory-type agent has a personal markdown file (`_chico/memory/<persona>.md`) where it records project-specific learnings — Alex's stylistic preferences, project conventions, historical decisions, known pitfalls. The agent reads its sanctum at the start of every session and updates it at the end of significant ones.
+**Agent Sanctum** is the always-on layer: each Memory-type agent has a personal markdown file (`_chico/memory/<persona>.md`) where it records project-specific learnings — the user's stylistic preferences, project conventions, historical decisions, known pitfalls. The agent reads its sanctum at the start of every session and updates it at the end of significant ones.
 
 **Semantic RAG** is the opt-in layer: the `chico-rag` MCP server chunks and embeds every project artifact (PRDs, architecture docs, old state files) into a Qdrant vector store using the local `bge-large-en-v1.5` model. Agents call `chico_memory_search("question")` instead of re-reading 10 files. Requires a Qdrant instance (works great on a small VPS via SSH tunnel).
 

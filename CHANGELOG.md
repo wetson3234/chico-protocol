@@ -6,6 +6,28 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-07-29
+
+### Fixed
+- **Auto-resume missed "weekly limit" messages** (real overnight incident: a weekly limit killed
+  every in-flight agent and nothing resumed for ~24 h). Detection now covers every limit kind —
+  session, weekly, daily, monthly, 5-hour, rate, "usage limit reached", "out of usage credits" —
+  in English and French, with every observed time format (`8pm`, `6:50pm`, `18:50`, `20h05`,
+  optional `at`, optional weekday, optional IANA timezone). The reset time stays fully dynamic.
+- **Scheduling did not survive a PC sleep or reboot.** Pending resumes are now persisted to a
+  state file and fired by a wall-clock check instead of a long `setTimeout`; a startup catch-up
+  scan detects a session that died on a limit while no watcher was running (e.g. relaunched by a
+  scheduled task after a reboot) and schedules the resume immediately.
+
+### Added
+- **Model fallback** (`--fallback-chain`, default `fable,opus,sonnet`; disable with
+  `--no-fallback` or `AUTO_RESUME_FALLBACK=0`): when a high-tier model hits its limit, resume
+  immediately on the next lower tier instead of waiting, while keeping the reset-time resume as a
+  safety net that restores the original model.
+- Single-instance lock (safe to rerun from a scheduled task or cron every few minutes).
+- `--scan-only` (print the catch-up verdict and exit) and `--dry-run` (log decisions without
+  spawning `claude`) for safe verification.
+
 ## [1.1.0] — 2026-07-25
 
 ### Added
